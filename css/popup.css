@@ -1,0 +1,125 @@
+.toast-list {
+  position: fixed;
+  bottom: 2dvh;
+  right: 2vw;
+  pointer-events: none;
+}
+
+.toast {
+  display: flex;
+  justify-content: end;
+  background-color: white;
+  width: fit-content;
+  max-width: 270px;
+  margin-left: auto;
+  gap: 5px;
+  padding: 10px 20px;
+  box-shadow: -5px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  animation: toast 0.3s ease forwards;
+}
+
+.toast p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toast span {
+  white-space: nowrap;
+}
+
+@keyframes toast {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toast.hide {
+  animation: hide_toast 0.3s ease forwards;
+}
+
+@keyframes hide_toast {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  gap: 10px;
+  z-index: 100;
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 15px;
+  animation: confirmation 0.3s ease forwards;
+}
+
+@keyframes confirmation {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.confirmation .confirmation-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.confirmation .confirmation-text::first-line {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+.confirmation .confirmation-buttons {
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+}
+
+.confirmation-buttons button {
+  padding: 5px 0;
+  width: 70px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.confirmation-buttons button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.confirmation-buttons .cancel {
+  background-color: #ef233c;
+  color: white;
+}
+
+.confirmation-buttons .confirm {
+  background-color: #2b2d42;
+  color: white;
+}

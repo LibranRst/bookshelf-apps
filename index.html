@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf - Libran Dev.</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+  <body>
+    <div class="backdrop" hidden></div>
+    <main class="wrapper">
+      <div class="navbar">
+        <button class="nav_button home">-</button>
+        <h1 class="title">Bookshelf</h1>
+        <button class="nav_button clearall">clear all</button>
+        <button class="nav_button openadd" id="openModal">+</button>
+        <div class="modal closed">
+          <h3>Add Book</h3>
+          <form class="addbook-form" id="formAddBook" autocomplete="off">
+            <input
+              type="text"
+              placeholder="Title..."
+              class="input"
+              id="inputTitle"
+            />
+            <div class="validation" id="titleValidation">
+              <i class="bi bi-x-circle-fill"></i>
+              <span>Title cannot be empty.</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Author..."
+              class="input"
+              id="inputAuthor"
+            />
+            <div class="validation" id="authorValidation">
+              <i class="bi bi-x-circle-fill"></i>
+              <span>Author cannot be empty.</span>
+            </div>
+            <input
+              type="date"
+              placeholder="Year..."
+              class="input"
+              id="inputYear"
+            />
+            <div class="validation" id="yearValidation">
+              <i class="bi bi-x-circle-fill"></i>
+              <span>Year cannot be empty.</span>
+            </div>
+            <div class="checkbox-container">
+              <label for="">Finish Reading ?</label>
+              <input type="checkbox" id="inputCheckbox" />
+            </div>
+            <button type="submit">Add</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <h1>start apps</h1>
+        <div class="bookshelf-container" hidden>
+          <div class="unread-books">
+            <div class="books-title">
+              <h2>Unread Books</h2>
+              <span id="unreadCount">0</span>
+            </div>
+            <div class="books" id="unread">
+              <!-- <div class="book">
+                <div class="description">
+                  <h3>A Small Things That Doesn't Make You A Coward</h3>
+                  <p>Yukihira Kazama</p>
+                  <small>2022-11-21</small>
+                </div>
+                <div class="actions">
+                  <button class="button-read">Read</button>
+                  <button class="button-delete">Delete</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="readed-books">
+            <div class="books-title">
+              <h2>Readed Books</h2>
+              <span id="readedCount">0</span>
+            </div>
+            <div class="books" id="readed">
+              <!-- <div class="book">
+                <div class="description">
+                  <h3>A Small Things That Doesn't Make You A Coward</h3>
+                  <p>Yukihira Kazama</p>
+                  <small>2022-11-21</small>
+                </div>
+                <div class="actions">
+                  <button class="button-undo">Undo</button>
+                  <button class="button-delete">Delete</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="credit"
+        style="
+          color: white;
+          margin-top: 15px;
+          opacity: 0.5;
+          font-weight: 300;
+          font-size: 0.8rem;
+        "
+      >
+        created by Libran Dev.
+      </div>
+      <div class="toast-list"></div>
+      <!-- <div class="confirmation">
+        <div class="confirmation-text">Are you sure?</div>
+        <div class="confirmation-buttons">
+          <button class="cancel">No</button>
+          <button class="confirm">Yes</button>
+        </div>
+      </div> -->
+    </main>
+    <script src="js/behaviour.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/data_manipulation.js"></script>
+    <script src="js/storage.js"></script>
+  </body>
+</html>
