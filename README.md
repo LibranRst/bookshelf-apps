@@ -21,15 +21,6 @@ Welcome to Bookshelf Apps, where an exceptional books manager awaits you! This p
 - **Responsive Design:** Experience seamless interaction on various devices, thanks to a responsive layout.
 - **Smooth Animations:** Enjoy fluid animations that enhance the overall user experience.
 
-
-
-## Usage
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/bookshelf-apps.git
-
 ## Screenshots
 
 ![App Screenshot](https://iili.io/JnC1RHl.png)
@@ -43,4 +34,12 @@ Welcome to Bookshelf Apps, where an exceptional books manager awaits you! This p
 ![App Screenshot](https://iili.io/JnC1eig.png)
 
 ![App Screenshot](https://iili.io/JnC1SUv.png)
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/bookshelf-apps.git
+
 
