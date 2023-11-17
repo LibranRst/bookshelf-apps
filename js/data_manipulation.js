@@ -17,6 +17,8 @@ const render = (idBook) => {
     }
   }
 
+  console.log(books)
+
   countBook();
 };
 
@@ -57,7 +59,7 @@ const addBook = () => {
   const isComplete = document.getElementById("inputCheckbox").checked;
 
   const id = +new Date();
-  const bookObject = generateBookObject(id, title, author, year, isComplete);
+  const bookObject = generateBookObject(id, title, author, Number(year), isComplete);
 
   let isValid = true;
   removeValidation();
