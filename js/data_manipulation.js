@@ -17,8 +17,6 @@ const render = (idBook) => {
     }
   }
 
-  console.log(books)
-
   countBook();
 };
 
