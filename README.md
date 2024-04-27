@@ -37,7 +37,7 @@ Welcome to Bookshelf Apps, where an exceptional books manager awaits you! This p
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/bookshelf-apps.git
+   git clone https://github.com/LibranRst/bookshelf-apps.git
    ```
 2. Open index.html file.
 
