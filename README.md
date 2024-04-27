@@ -38,5 +38,7 @@ Welcome to Bookshelf Apps, where an exceptional books manager awaits you! This p
 
    ```bash
    git clone https://github.com/your-username/bookshelf-apps.git
+   ```
+2. Open index.html file.
 
 
